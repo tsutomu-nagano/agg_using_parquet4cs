@@ -3,14 +3,19 @@ C#でparquetを使用した集計処理のサンプル
 
 
 ## requirement
-- workspaces.csprojを参照
-``` XML
-  <ItemGroup>
-    <PackageReference Include="Csv" Version="2.0.93" />
-    <PackageReference Include="Parquet.Net" Version="4.16.4" />
-    <PackageReference Include="YamlDotNet" Version="13.7.1" />
-  </ItemGroup>
-```
+- .net
+  ``` shell
+  $ dotnet --version
+  7.0.400
+  ```
+- package
+  ``` XML
+    <ItemGroup>
+      <PackageReference Include="Csv" Version="2.0.93" />
+      <PackageReference Include="Parquet.Net" Version="4.16.4" />
+      <PackageReference Include="YamlDotNet" Version="13.7.1" />
+    </ItemGroup>
+  ```
 
 ## description
 - 集計処理の指示はsetting.yamlでおこないます

@@ -3,15 +3,11 @@ services:
   devcontainer:
     build: .
     image: dotnet:7
-    container_name: dotnet7-dev
-
-    # tty: true
-    # stdin_open: true
+    container_name: dotnet7
 
     volumes:
       - ./app:/workspaces
 
     working_dir: /workspaces
 
-    # command: /bin/bash
     command: dotnet run data/setting.yaml
