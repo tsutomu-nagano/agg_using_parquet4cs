@@ -33,6 +33,8 @@ C#でparquetを使用した集計処理のサンプル
         - name: 集計事項として使用する列名
           position: データ中の位置
     ```
+- setting.yamlはdataディレクトリ直下に置いてください
+  - 直下でなくてもよいのですが、Program.csのMainで引数として受けてますが、quickstartで使用するdokcer-compose内でdata直下にある想定で実行しているので、dockerで実行する場合はdataディレクトリ直下に置いてください
 - 集計結果はログとして出力されます
 - 各種ファイルの配置場所は以下で
   ``` shell
@@ -42,7 +44,8 @@ C#でparquetを使用した集計処理のサンプル
   ```
 
 ## quickstart
-- dockerで実行可能
+- 入出力、使用する事項の情報をsetting.yamlに記載
+- docker-compose up で実行
 ``` sh
 cd agg_using_parquet4cs
 docker-compose up 
