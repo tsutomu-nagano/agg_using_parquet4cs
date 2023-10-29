@@ -1,3 +1,5 @@
 app/bin
 app/obj
-app/data/*
+app/data/dest/*
+app/data/src/*
+app/data/log*
