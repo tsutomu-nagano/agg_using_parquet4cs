@@ -1,0 +1,28 @@
+
+- id: 1
+  description: "100000rec/col4/csv"
+  src: data/src/inp_100000_col4.csv
+  dest: data/dest/out_100000_col4_csv_Ken_Sei_Age.csv
+  dimension:
+    - name: Ken
+      position: 0
+    - name: Sei
+      position: 1
+  measure:
+    - name: Age
+      position: 4
+
+- id: 2
+  description: "100000rec/col4/parquet"
+  src: data/src/inp_100000_col4.parquet
+  dest: data/dest/out_100000_col4_parquet_Ken_Sei_Age.csv
+  dimension:
+    - name: Ken
+      position: 0
+    - name: Sei
+      position: 1
+  measure:
+    - name: Age
+      position: 4
+
+
